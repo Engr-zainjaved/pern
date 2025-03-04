@@ -4,7 +4,7 @@ import morgan from 'morgan';
 import cors from 'cors';
 import { psql } from './config/db.js';
 import productRoutes from './routes/productRoutes.js';
-import * as aj from './lib/arcjet.js';
+import { aj } from './lib/arcjet.js';
 
 const app = express();
 const PORT = process.env.PORT || 8000;
